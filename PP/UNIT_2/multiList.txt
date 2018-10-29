@@ -1,0 +1,41 @@
+# matrix creation
+#case1:
+
+matrix=[]
+rows=eval(input("enter no.of rows"))
+cols=eval(input("enter no. of cols"))
+for row in range(rows):
+    matrix.append([])
+    for col in range(cols):
+        value=eval(input("enter a value and press enter"))
+        matrix[row].append(value)
+
+print(matrix)
+********************************************
+#case2:matrix creation randomly
+import randon
+matrix=[]
+rows=eval(input("enter no.of rows"))
+cols=eval(input("enter no. of cols"))
+for row in range(rows):
+    matrix.append([])
+    for col in range(cols):
+        matrix[row].append(random.randint(0,9))
+        
+===================================================
+#matrix display
+
+#case1:
+for row in matrix:
+    for value in row:
+        print(value,end=" ")
+    print()
+___________________________________________________
+#case2:
+
+for row in range(len(matrix)):
+    for col in range(len(matrix[row])):
+       print(matrix[row][col], end=" ")
+    print( )
+
+
